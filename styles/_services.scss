@@ -1,0 +1,76 @@
+.services-title {
+  text-align: start;
+  position: relative;
+
+  & h3 {
+    font-size: 1.7rem;
+    color: lightgray;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid orange;
+    margin-bottom: 15px;
+    width: 140px;
+    text-align: left;
+  }
+
+  & h4 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 30px;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 40px;
+
+  & .card {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 50px 15px;
+    transition: all 0.5s;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    & .fa-anchor,
+    & .fa-archway,
+    & .fa-globe-europe,
+    & .fa-cocktail,
+    & .fa-tram,
+    & .fa-spa {
+      background: orange;
+      color: black;
+      margin-bottom: 20px;
+      padding: 15px 15px;
+      border-radius: 5px;
+    }
+
+    & h5 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      letter-spacing: 1.3px;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.5s;
+
+      &:hover {
+        color: orange;
+      }
+    }
+
+    & p {
+      font-size: 1.6rem;
+      font-family: 'Redressed', cursive;
+    }
+  }
+}

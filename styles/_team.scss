@@ -1,0 +1,71 @@
+.team {
+  padding: 50px 0;
+
+  .team-title {
+    text-align: left;
+    position: relative;
+  
+    & h3 {
+      font-size: 1.7rem;
+      color: lightgray;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid orange;
+      margin-bottom: 15px;
+      width: 140px;
+      text-align: left;
+    }
+  
+    & h4 {
+      font-size: 3rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+      margin-bottom: 30px;
+    }
+  }
+
+  .team-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+    & .t-card {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 4px 8px 12px lightgrey;
+      cursor: pointer;
+      transition: all 0.5s;
+     
+      &:hover {
+        box-shadow: 6px 10px 14px rgba(0, 0, 0, 0.7);
+        transform: scale(1.1);
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    & h3 {         
+      margin: 10px 0;
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: 'Dosis', sans-serif;
+    }
+
+    & h4 {           
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: lightgray;
+    }
+  }
+}
+

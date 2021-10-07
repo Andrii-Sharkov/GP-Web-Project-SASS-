@@ -1,0 +1,141 @@
+.contact {
+  padding: 50px 0;
+
+  & .contact-title {
+    text-align: left;
+    position: relative;
+  
+    & h3 {
+      font-size: 1.7rem;
+      color: lightgray;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid orange;
+      margin-bottom: 15px;
+      width: 140px;
+      text-align: left;
+    }
+  
+    & h4 {
+      font-size: 3rem;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+  
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      
+      // & .contact-details {
+      //   position: relative;
+      // }
+
+      & .contact-details {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        & .fa-thumbtack,
+        & .fa-at,
+        & .fa-tty {
+          // position: absolute;
+          // top: 6px;
+          // left: 0;
+          background: orange;
+          color: black;
+          padding: 10px 15px; 
+          border-radius: 5px;
+          margin-right: 15px;
+          margin-bottom: 10px;
+        }
+
+        & .find-us {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          // align-items: center;
+
+          & h5 {
+            font-size: 1.5rem;
+            font-family: 'Dosis', sans-serif;
+            letter-spacing: 1.4px;
+            margin-bottom: 5px;
+          }
+
+          & p {
+            font-size: 1.2rem;
+            font-family: 'Dosis', sans-serif;
+            margin-bottom: 15px;
+          }
+        }
+    
+        
+    
+        
+    
+        
+    
+        // & .contact-details h5, p {
+        //   margin-left: 75px;
+        // }
+      }  
+
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      label {
+        font-family: 'Redressed', cursive;
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+        color: orange;
+      }
+  
+      input[type=text], input[type=email], input[text=object], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        font-size: 1.3rem;
+        // width: 30%;
+        background-color: orange;
+        color: white;
+        padding: 10px 15px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        letter-spacing: 2px;
+        transition: all 0.5s;
+        
+        &:hover {
+          border: 1px solid black;
+          color: black;
+        }            
+      }
+    }
+  }
+}
+
+
+

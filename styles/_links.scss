@@ -1,0 +1,178 @@
+.links {
+  padding: 50px 0;
+  background-color: black;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-gap: 10px;
+  }
+
+  .main-details {
+    display: flex;
+    flex-direction: column;
+
+    & .small-logo {
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    & p {
+      color: white;
+      font-size: 1.1rem;
+      font-family: 'Dosis', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    & h4 {
+      font-size: 1.1rem;
+      color: white;
+
+      & strong {
+        color: orange;
+      }
+    }
+
+    & .social-links {
+      display: flex;
+
+      & .fa-twitter,
+      & .fa-facebook-f, 
+      & .fa-instagram,
+      & .fa-skype,
+      & .fa-linkedin-in {
+        color: white;
+        background: #333;
+        padding: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          background: orange;
+          color: black;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  
+  .useful-links h6 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Railway', cursive;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .useful-links ul {
+    display: flex;
+    flex-direction: column;
+
+    & li {
+      list-style: none;
+      margin-bottom: 15px;
+
+      & .fa-chevron-right {
+        color: orange;
+      }
+
+      & a {
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        transition: all 0.5s;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  .useful-services h6 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Railway', cursive;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .useful-services ul {
+    display: flex;
+    flex-direction: column;
+
+    & li {
+      list-style: none;
+      margin-bottom: 15px;
+
+      & .fa-chevron-right {
+        color: orange;
+      }
+
+      & a {
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        transition: all 0.5s;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  .subscription {
+    display: flex;
+    flex-direction: column;
+
+    & h6 {
+      color: white;
+      font-size: 1.3rem;
+      font-family: 'Railway', cursive;
+      margin-bottom: 15px;
+      letter-spacing: 1.5px;
+    }
+
+    & p {
+      color: white;
+      font-size: 1.1rem;
+      font-family: 'Dosis', sans-serif;
+      margin-bottom: 15px;
+    }
+
+    & .input-box {
+      display: flex;
+
+      & input {
+        padding: 10px 15px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      & a {
+        font-size: 1.3rem;
+        font-family: 'Redressed', cursive;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background: orange;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px 15px; 
+        transition: all 0.5s;
+
+        &:hover {
+          background: black;
+          color: orange;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
